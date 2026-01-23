@@ -85,7 +85,7 @@ h3 {
 
 /* ABOUT */
 .about p {
-    max-width: 720px;
+    max-width: 1120px;
     color: #555;
 }
 
@@ -161,6 +161,7 @@ footer {
         max-width: 320px;
     }
 }
+
 
 
 
