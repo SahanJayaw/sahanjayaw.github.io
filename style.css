@@ -38,7 +38,7 @@ body {
 }
 
 .hero h2 {
-    font-size: 22px;
+    font-size: 30px;
     margin: 12px 0;
     color: var(--secondary);
     font-weight: 500;
@@ -160,6 +160,7 @@ footer {
         max-width: 320px;
     }
 }
+
 
 
 
