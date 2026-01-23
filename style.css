@@ -34,6 +34,7 @@ body {
 .hero h1 {
     font-size: 48px;
     font-weight: 700;
+    margin-bottom: 6px;
     color: var(--primary);
 }
 
@@ -160,6 +161,7 @@ footer {
         max-width: 320px;
     }
 }
+
 
 
 
