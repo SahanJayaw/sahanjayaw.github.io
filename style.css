@@ -23,7 +23,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 90px 10%;
+    padding: 50px 10%;
     background: #ffffff;
 }
 
@@ -137,4 +137,5 @@ footer {
         max-width: 320px;
     }
 }
+
 
