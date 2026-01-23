@@ -112,27 +112,6 @@ h3 {
 }
 
 /* ------------------------ */
-/* BUTTON STYLES + HOVER    */
-/* ------------------------ */
-.btn {
-    display: inline-block;
-    padding: 14px 32px;
-    background: var(--primary);      /* dark blue */
-    color: #fff;
-    text-decoration: none;
-    border-radius: 30px;
-    font-weight: 500;
-    transition: 0.3s ease;
-}
-
-.btn:hover {
-    background: var(--secondary);    /* slightly lighter blue */
-    transform: translateY(-3px);     /* subtle lift effect */
-    box-shadow: 0 8px 20px rgba(10,31,68,0.3); /* glow shadow */
-    cursor: pointer;
-}
-
-/* ------------------------ */
 /* SKILLS LIST + HOVER      */
 /* ------------------------ */
 .skills li {
@@ -181,6 +160,7 @@ footer {
         max-width: 320px;
     }
 }
+
 
 
 
