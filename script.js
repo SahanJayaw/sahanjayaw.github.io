@@ -7,21 +7,21 @@ const observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.2 }
+  { threshold: 0.25 }
 );
 
-document.querySelectorAll(".reveal, .reveal-right")
-  .forEach(el => observer.observe(el));
+document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
 
-/* PARALLAX IMAGE */
-const parallax = document.querySelector(".parallax");
+/* PARALLAX HERO IMAGE */
+const visual = document.querySelector(".parallax");
 
 document.addEventListener("mousemove", e => {
-  const x = (window.innerWidth / 2 - e.clientX) / 25;
-  const y = (window.innerHeight / 2 - e.clientY) / 25;
+  if (!visual) return;
 
-  if (parallax) {
-    parallax.style.transform = `translate(${x}px, ${y}px)`;
-  }
+  const x = (window.innerWidth / 2 - e.clientX) / 30;
+  const y = (window.innerHeight / 2 - e.clientY) / 30;
+
+  visual.style.transform = `translate(${x}px, ${y}px)`;
 });
+
 
