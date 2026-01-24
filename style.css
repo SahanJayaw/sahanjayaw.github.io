@@ -1,21 +1,33 @@
-:root {
-    --primary: #0a1f44;   /* dark blue */
-    --secondary: #1c3d7a;
-    --light: #f4f6fa;
-    --text: #222;
-}
-
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
+/* VARIABLES */
+:root {
+    --primary: #0a1f44;
+    --secondary: #2563eb;
+    --bg-light: #f6f8fc;
+    --text-dark: #111;
+    --text-muted: #555;
+}
+
+/* GLOBAL */
 body {
-    background: var(--light);
-    color: var(--text);
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-dark);
+    background: #ffffff;
     line-height: 1.6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 80px 10%;
 }
 
 /* HERO */
@@ -23,70 +35,80 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 50px 10%;
-    background: #ffffff;
+    gap: 60px;
+    background: linear-gradient(135deg, #ffffff 0%, var(--bg-light) 100%);
 }
 
 .hero-content {
-    max-width: 50%;
+    max-width: 600px;
 }
 
 .hero h1 {
-    font-size: 48px;
+    font-size: 52px;
     font-weight: 700;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
     color: var(--primary);
+    letter-spacing: -0.5px;
 }
 
 .hero h2 {
-    font-size: 30px;
-    margin: 12px 0;
-    color: var(--secondary);
+    font-size: 26px;
     font-weight: 500;
+    margin-bottom: 14px;
+    color: var(--secondary);
 }
 
 .hero p {
-    margin: 20px 0;
-    color: #555;
+    margin-bottom: 26px;
+    color: var(--text-muted);
 }
 
+/* BUTTON */
 .btn {
     display: inline-block;
-    padding: 14px 32px;
+    padding: 14px 34px;
     background: var(--primary);
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
-    border-radius: 30px;
+    border-radius: 40px;
     font-weight: 500;
-    transition: 0.3s ease;
+    letter-spacing: 0.3px;
+    transition: all 0.35s ease;
 }
 
 .btn:hover {
     background: var(--secondary);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(10, 31, 68, 0.35);
 }
 
+/* HERO IMAGE */
 .hero-image img {
     width: 480px;
-    border-radius: 18px;
+    border-radius: 22px;
     object-fit: cover;
-    box-shadow: 0 20px 40px rgba(10,31,68,0.25);
+    box-shadow:
+        0 30px 60px rgba(10,31,68,0.25),
+        0 10px 20px rgba(0,0,0,0.08);
+    transition: transform 0.4s ease;
 }
 
-/* SECTIONS */
-section {
-    padding: 40px 10%;
+.hero-image img:hover {
+    transform: translateY(-6px) scale(1.01);
 }
 
+/* HEADINGS */
 h3 {
-    font-size: 28px;
-    margin-bottom: 20px;
+    font-size: 30px;
+    margin-bottom: 18px;
     color: var(--primary);
+    letter-spacing: -0.3px;
 }
 
 /* ABOUT */
 .about p {
-    max-width: 1120px;
-    color: #555;
+    max-width: 900px;
+    color: var(--text-muted);
 }
 
 /* SKILLS */
@@ -99,49 +121,35 @@ h3 {
 
 .skills li {
     background: #ffffff;
-    padding: 14px 22px;
-    border-radius: 22px;
+    padding: 14px 26px;
+    border-radius: 30px;
     font-size: 14px;
     font-weight: 500;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: all 0.35s ease;
+}
+
+.skills li:hover {
+    background: var(--primary);
+    color: #ffffff;
+    transform: translateY(-4px);
+    box-shadow: 0 18px 40px rgba(10,31,68,0.35);
 }
 
 /* CONTACT */
 .contact p {
-    margin-bottom: 10px;
-    color: #555;
+    color: var(--text-muted);
+    margin-bottom: 8px;
 }
-
-/* ------------------------ */
-/* SKILLS LIST + HOVER      */
-/* ------------------------ */
-.skills li {
-    background: #ffffff;
-    padding: 14px 22px;
-    border-radius: 22px;
-    font-size: 14px;
-    font-weight: 500;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-    transition: 0.3s ease;
-    cursor: default;
-}
-
-.skills li:hover {
-    background: var(--primary);      /* dark blue */
-    color: #fff;                      /* text turns white */
-    transform: translateY(-3px);      /* slight lift */
-    box-shadow: 0 12px 25px rgba(10,31,68,0.3); /* glow shadow */
-    cursor: pointer;
-}
-
 
 /* FOOTER */
 footer {
     text-align: center;
-    padding: 15px;
-    background: var(--primary);
+    padding: 22px;
+    background: linear-gradient(135deg, var(--primary), #06142f);
     color: #ffffff;
-    font-size: 14px;
+    font-size: 13px;
+    letter-spacing: 0.3px;
 }
 
 /* RESPONSIVE */
@@ -151,16 +159,17 @@ footer {
         text-align: center;
     }
 
-    .hero-content {
-        max-width: 100%;
+    .hero-image img {
+        width: 100%;
+        max-width: 360px;
     }
 
-    .hero-image img {
-        margin-top: 40px;
-        width: 100%;
-        max-width: 320px;
+    section {
+        padding: 60px 8%;
     }
 }
+
+
 
 
 
