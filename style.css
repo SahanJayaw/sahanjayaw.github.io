@@ -236,6 +236,24 @@ footer {
   }
 }
 
+/* CUSTOM CURSOR DOT */
+.cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(37, 99, 235, 0.9);
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.08s ease-out;
+  box-shadow: 0 0 20px rgba(37, 99, 235, 0.6);
+}
+
+
+
 
 
 
