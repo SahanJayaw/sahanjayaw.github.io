@@ -58,7 +58,7 @@ h3 {
 }
 
 .hero-text {
-  max-width: 680px;
+  max-width: 695px;
 }
 
 /* HEADLINE SPLIT ANIMATION */
@@ -251,6 +251,7 @@ footer {
   transition: transform 0.08s ease-out;
   box-shadow: 0 0 20px rgba(37, 99, 235, 0.6);
 }
+
 
 
 
