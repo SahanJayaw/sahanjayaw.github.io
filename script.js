@@ -56,6 +56,17 @@ document.addEventListener("mousemove", e => {
   if (parallax) parallax.style.transform = `translate(${x}px, ${y}px)`;
 });
 
+/* ------------------------------ */
+/* CUSTOM CURSOR FOLLOW           */
+/* ------------------------------ */
+const cursor = document.querySelector(".cursor-dot");
+
+document.addEventListener("mousemove", e => {
+  cursor.style.top = `${e.clientY}px`;
+  cursor.style.left = `${e.clientX}px`;
+});
+
+
 
 
 
