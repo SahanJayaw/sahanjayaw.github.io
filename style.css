@@ -261,6 +261,20 @@ footer {
   }
 }
 
+@media (max-width: 900px) {
+  section {
+    padding: 50px 6%;
+  }
+
+  .divider {
+    margin: 24px auto;
+  }
+
+  .about {
+    padding-top: 24px;
+  }
+}
+
 /* CUSTOM CURSOR DOT */
 .cursor-dot {
   position: fixed;
@@ -276,6 +290,7 @@ footer {
   transition: transform 0.08s ease-out;
   box-shadow: 0 0 20px rgba(37, 99, 235, 0.6);
 }
+
 
 
 
