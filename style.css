@@ -228,7 +228,7 @@ footer {
   .hero {
     flex-direction: column;
     justify-content: center;
-    gap: 40px;
+    gap: 14px;
     text-align: center;
   }
 
@@ -275,6 +275,7 @@ footer {
   transition: transform 0.08s ease-out;
   box-shadow: 0 0 20px rgba(37, 99, 235, 0.6);
 }
+
 
 
 
