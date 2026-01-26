@@ -224,7 +224,7 @@ footer {
 }
 
 /* RESPONSIVE */
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .hero {
     flex-direction: column;
     text-align: center;
@@ -251,6 +251,7 @@ footer {
   transition: transform 0.08s ease-out;
   box-shadow: 0 0 20px rgba(37, 99, 235, 0.6);
 }
+
 
 
 
