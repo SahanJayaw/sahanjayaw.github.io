@@ -265,6 +265,14 @@ footer {
 .hero-visual {
     margin-bottom: 10px;
   }
+
+  .skills {
+    padding-top: 40px;
+  }
+
+  .contact {
+    padding-top: 40px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -296,6 +304,7 @@ footer {
   transition: transform 0.08s ease-out;
   box-shadow: 0 0 20px rgba(37, 99, 235, 0.6);
 }
+
 
 
 
