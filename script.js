@@ -1,7 +1,7 @@
 const typedText = document.getElementById("typed-text");
 const phrases = [
   "Creative Designer",
-  "Ai Visual Specialist",
+  "AI Visual Specialist",
   "Brand Storyteller",
   "Visual Problem Solver"
 ];
