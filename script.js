@@ -3,6 +3,7 @@ const phrases = [
   "Creative Designer",
   "AI Visual Specialist",
   "Brand Storyteller",
+  "AI Video Editor",
   "Visual Problem Solver"
 ];
 
