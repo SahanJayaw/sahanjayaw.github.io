@@ -290,6 +290,20 @@ footer {
   }
 }
 
+@media (max-width: 768px) {
+  .about p {
+    text-align: left;
+    line-height: 1.7;
+    word-break: normal;
+    white-space: normal;
+  }
+
+  .about br {
+    display: none;
+  }
+}
+
+
 /* CUSTOM CURSOR DOT */
 .cursor-dot {
   position: fixed;
@@ -367,6 +381,7 @@ footer {
     padding: 6px 14px;
   }
 }
+
 
 
 
