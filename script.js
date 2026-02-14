@@ -69,7 +69,7 @@ document.addEventListener("mousemove", e => {
 
 /* TICK SOUND ON BUTTON HOVER */
 const tickBtn = document.querySelector(".btn");
-const tickSound = new Audio("assets/tick.mp3");
+const tickSound = new Audio("edr-switch-click-and-beep-001a-11602.mp3");
 
 tickSound.volume = 0.25; // subtle
 
