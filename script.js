@@ -67,6 +67,20 @@ document.addEventListener("mousemove", e => {
   cursor.style.left = `${e.clientX}px`;
 });
 
+/* TICK SOUND ON BUTTON HOVER */
+const tickBtn = document.querySelector(".btn");
+const tickSound = new Audio("assets/tick.mp3");
+
+tickSound.volume = 0.25; // subtle
+
+if (tickBtn) {
+  tickBtn.addEventListener("mouseenter", () => {
+    tickSound.currentTime = 0; // restart if hover again quickly
+    tickSound.play();
+  });
+}
+
+
 
 
 
