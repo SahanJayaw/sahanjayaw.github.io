@@ -398,6 +398,10 @@ footer {
   animation: scrollBrands 25s linear infinite;
 }
 
+.brands-track img {
+  height: 50px;
+}
+
 .brands-group {
   display: flex;
   gap: 80px;
