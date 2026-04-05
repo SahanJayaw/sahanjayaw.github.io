@@ -405,7 +405,7 @@ footer {
 
 /* 🔥 LOGO SIZE */
 .brands-group img {
-  height: 100px; /* your size kept */
+  height: 50px; /* your size kept */
   width: auto;
   object-fit: contain;
   opacity: 0.7;
