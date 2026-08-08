@@ -418,44 +418,35 @@ footer {
   background: transparent;
 }
 
+/*
+  Your HTML has 9 identical logo sets.
+  We keep that HTML exactly as it is.
+*/
+
 .brands-track {
   display: flex;
+  flex-wrap: nowrap;
   width: max-content;
   animation: scrollBrands 55s linear infinite;
   will-change: transform;
 }
 
-.brands-group {
-  display: flex;
-  align-items: center;
-  gap: 80px;
-  flex-shrink: 0;
-  padding-right: 80px;
-}
-
-.brands-group img {
-  height: 40px;
+/* DIRECT IMAGES — matches your existing HTML */
+.brands-track > img {
+  height: 30px;
   width: auto;
-  max-height: 45px
+  max-height: 30px;
+  max-width: 120px;
   object-fit: contain;
   flex-shrink: 0;
   opacity: 0.7;
-  transition: 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
-.brands-group img:hover {
+/* Hover does NOT enlarge the logos */
+.brands-track > img:hover {
   opacity: 1;
-  transform: scale(1.1);
-}
-
-/* FINAL BRAND LOGO SIZE */
-.brands .brands-track .brands-group img {
-  height: 30px !important;
-  width: auto !important;
-  max-width: 120px !important;
-  max-height: 30px !important;
-  object-fit: contain !important;
-  transform: none !important;
+  transform: none;
 }
 
 /* =============================== */
@@ -496,13 +487,19 @@ footer {
 /* CONTINUOUS INFINITE LOOP        */
 /* =============================== */
 
+/*
+  There are 9 identical sets in your HTML.
+  One complete set = 1/9 of the total track.
+  Therefore we move exactly 11.111111%.
+*/
+
 @keyframes scrollBrands {
   from {
     transform: translate3d(0, 0, 0);
   }
 
   to {
-    transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-11.111111%, 0, 0);
   }
 }
 
@@ -520,12 +517,9 @@ footer {
     margin-bottom: 30px;
   }
 
-  .brands-group {
-    gap: 55px;
-    padding-right: 55px;
-  }
-
-  .brands-group img {
-    height: 42px;
+  .brands-track > img {
+    height: 28px;
+    max-height: 28px;
+    max-width: 110px;
   }
 }
