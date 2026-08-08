@@ -424,14 +424,12 @@ footer {
   overflow: hidden;
   width: 100%;
   padding: 40px 0;
-  background: transparent;
 }
 
 .brands-track {
   display: flex;
   width: max-content;
-  animation: scrollBrands 35s linear infinite;
-  will-change: transform;
+  animation: brandsInfinite 35s linear infinite;
 }
 
 .brands-group {
@@ -445,24 +443,19 @@ footer {
 .brands-group img {
   height: 50px;
   width: auto;
+  flex-shrink: 0;
   object-fit: contain;
   opacity: 0.7;
-  flex-shrink: 0;
-  transition: 0.3s ease;
 }
 
-.brands-group img:hover {
-  opacity: 1;
-  transform: scale(1.1);
-}
-
-@keyframes scrollBrands {
+/* CONTINUOUS INFINITE MOVEMENT */
+@keyframes brandsInfinite {
   from {
-    transform: translate3d(0, 0, 0);
+    transform: translateX(0);
   }
 
   to {
-    transform: translate3d(-50%, 0, 0);
+    transform: translateX(-50%);
   }
 }
 
