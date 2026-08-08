@@ -417,11 +417,12 @@ footer {
 }
 
 /* =============================== */
-/* BRAND LOGO MARQUEE             */
+/* BRAND LOGO MARQUEE              */
 /* =============================== */
 
 .brands {
   overflow: hidden;
+  width: 100%;
   padding: 40px 0;
   background: transparent;
 }
@@ -429,16 +430,40 @@ footer {
 .brands-track {
   display: flex;
   width: max-content;
-  animation: scrollBrands 75s linear infinite;
-}
-
-.brands-track img {
-  height: 50px;
+  animation: scrollBrands 35s linear infinite;
+  will-change: transform;
 }
 
 .brands-group {
   display: flex;
+  align-items: center;
   gap: 80px;
+  flex-shrink: 0;
+  padding-right: 80px;
+}
+
+.brands-group img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.7;
+  flex-shrink: 0;
+  transition: 0.3s ease;
+}
+
+.brands-group img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+@keyframes scrollBrands {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
 }
 
 /* 🔥 LOGO SIZE */
