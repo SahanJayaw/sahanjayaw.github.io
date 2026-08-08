@@ -448,6 +448,16 @@ footer {
   transform: scale(1.1);
 }
 
+/* FINAL BRAND LOGO SIZE */
+.brands .brands-track .brands-group img {
+  height: 30px !important;
+  width: auto !important;
+  max-width: 120px !important;
+  max-height: 30px !important;
+  object-fit: contain !important;
+  transform: none !important;
+}
+
 /* =============================== */
 /* HAPPY CLIENTS                   */
 /* =============================== */
