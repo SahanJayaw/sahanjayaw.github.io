@@ -192,6 +192,40 @@ h3 {
   transform: translateY(-6px) scale(1.05);
 }
 
+/* =============================== */
+/* HAPPY CLIENTS                   */
+/* =============================== */
+
+.clients-intro {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.clients-number {
+  display: block;
+  font-size: 72px;
+  line-height: 0.95;
+  font-weight: 700;
+  letter-spacing: -3px;
+  color: var(--primary);
+}
+
+.clients-label {
+  display: block;
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.clients-intro p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
 /* FOOTER */
 footer {
   text-align: center;
@@ -430,46 +464,3 @@ footer {
     transform: translateX(-100%);
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
