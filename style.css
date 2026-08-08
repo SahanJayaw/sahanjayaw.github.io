@@ -429,7 +429,7 @@ footer {
 .brands-track {
   display: flex;
   width: max-content;
-  animation: brandsInfinite 35s linear infinite;
+  animation: brandsInfinite 65s linear infinite;
 }
 
 .brands-group {
