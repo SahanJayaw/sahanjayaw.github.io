@@ -429,7 +429,7 @@ footer {
 .brands-track {
   display: flex;
   width: max-content;
-  animation: scrollBrands 55s linear infinite;
+  animation: scrollBrands 75s linear infinite;
 }
 
 .brands-track img {
