@@ -435,7 +435,7 @@ footer {
 .brands-track > img {
   height: 35px;
   width: auto;
-  max-height: 30px;
+  max-height: 35px;
   max-width: 120px;
   object-fit: contain;
   flex-shrink: 0;
